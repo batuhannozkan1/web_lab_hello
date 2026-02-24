@@ -1,23 +1,23 @@
-# Web Tasarimi ve Programlama - LAB Odevi
+# Web Tasarımı ve Programlama - LAB Ödevi
 
-## Hakkinda
+## Hakkında
 
-Bu proje, **Firat Universitesi Web Tasarimi ve Programlama** dersinin LAB-1 ve LAB-2 odevleri kapsaminda gelistirilmis kisisel portfolyo web uygulamasidir. Proje; semantik HTML5 yapisi, erisilebilirlik (a11y) standartlari, ARIA etiketleri ve dogru heading hiyerarsisi gibi modern web gelistirme pratiklerini uygulamayi amaclamaktadir.
+Bu proje, **Fırat Üniversitesi Web Tasarımı ve Programlama** dersinin LAB-1 ve LAB-2 ödevleri kapsamında geliştirilmiş kişisel portföy web uygulamasıdır. Proje; semantik HTML5 yapısı, erişilebilirlik (a11y) standartları, ARIA etiketleri ve doğru heading hiyerarşisi gibi modern web geliştirme pratiklerini uygulamayı amaçlamaktadır.
 
-## Gelistirici
+## Geliştirici
 
-- **Ad Soyad:** Batuhan Yasar Ozkan
-- **Universite:** Firat Universitesi
-- **Bolum:** Yazilim Muhendisligi, 3. Sinif
+- **Ad Soyad:** Batuhan Yaşar Özkan
+- **Üniversite:** Fırat Üniversitesi
+- **Bölüm:** Yazılım Mühendisliği, 3. Sınıf
 
-## Kullanilan Teknolojiler
+## Kullanılan Teknolojiler
 
-- **React 19** - Kullanici arayuzu kutuphanesi
-- **TypeScript** - Tip guvenli JavaScript
-- **Vite** - Hizli gelistirme sunucusu ve build araci
+- **React 19** - Kullanıcı arayüzü kütüphanesi
+- **TypeScript** - Tip güvenli JavaScript
+- **Vite** - Hızlı geliştirme sunucusu ve build aracı
 - **HTML5 Semantik Etiketler** - `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
-- **CSS3** - Erisilebilir ve responsive tasarim
-- **ARIA** - Erisilebilirlik etiketleri ve rolleri
+- **CSS3** - Erişilebilir ve responsive tasarım
+- **ARIA** - Erişilebilirlik etiketleri ve rolleri
 
 ## Kurulum
 
@@ -26,45 +26,45 @@ Bu proje, **Firat Universitesi Web Tasarimi ve Programlama** dersinin LAB-1 ve L
 git clone <repo-url>
 cd web-lab-hello
 
-# Bagimliliklari kur
+# Bağımlılıkları kur
 npm install
 ```
 
-## Calistirma
+## Çalıştırma
 
 ```bash
-# Gelistirme sunucusunu baslat
+# Geliştirme sunucusunu başlat
 npm run dev
 
-# Uretim derlemesi olustur
+# Üretim derlemesi oluştur
 npm run build
 
-# Uretim derlemesini onizle
+# Üretim derlemesini önizle
 npm run preview
 ```
 
-## Proje Yapisi
+## Proje Yapısı
 
 ```
 web-lab-hello/
 ├── public/             # Statik dosyalar
 ├── src/
-│   ├── App.tsx         # Ana uygulama bileseni (semantik yapi)
+│   ├── App.tsx         # Ana uygulama bileşeni (semantik yapı)
 │   ├── App.css         # Uygulama stilleri
-│   ├── index.css       # Global CSS sifirlama
-│   └── main.tsx        # React giris noktasi
-├── index.html          # HTML sablonu (lang="tr")
-├── package.json        # Proje bagimliliklari ve betikleri
-├── tsconfig.json       # TypeScript yapilandirmasi
-├── vite.config.ts      # Vite yapilandirmasi
+│   ├── index.css       # Global CSS sıfırlama
+│   └── main.tsx        # React giriş noktası
+├── index.html          # HTML şablonu (lang="tr")
+├── package.json        # Proje bağımlılıkları ve betikleri
+├── tsconfig.json       # TypeScript yapılandırması
+├── vite.config.ts      # Vite yapılandırması
 └── README.md           # Bu dosya
 ```
 
-## Erisilebilirlik Ozellikleri
+## Erişilebilirlik Özellikleri
 
-- Skip Navigation (Ana icerigi atla) baglantisi
-- Dogru heading hiyerarsisi (h1 > h2 > h3)
-- Tum form elemanlarinda eslesen `<label>` etiketleri
-- ARIA rolleri ve `aria-describedby` hata mesajlari
-- Belirgin focus gostergeleri (outline)
-- Yeterli renk kontrasti (WCAG AA, 4.5:1 oran)
+- Skip Navigation (Ana içeriğe atla) bağlantısı
+- Doğru heading hiyerarşisi (h1 > h2 > h3)
+- Tüm form elemanlarında eşleşen `<label>` etiketleri
+- ARIA rolleri ve `aria-describedby` hata mesajları
+- Belirgin focus göstergeleri (outline)
+- Yeterli renk kontrastı (WCAG AA, 4.5:1 oran)
