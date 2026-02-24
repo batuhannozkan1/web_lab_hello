@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proje Önizleme](public/resim1.png)
+![Proje Önizleme](./public/resim1.png)
 
 **Fırat Üniversitesi - Yazılım Mühendisliği**
 
@@ -14,7 +14,7 @@ Semantik HTML5 ve Erişilebilirlik odaklı kişisel portföy uygulaması
 
 ## Hakkında
 
-Bu proje, **Fırat Üniversitesi Web Tasarımı ve Programlama** dersinin LAB-1 ve LAB-2 ödevleri kapsamında geliştirilmiş kişisel portföy web uygulamasıdır. Proje; semantik HTML5 yapısı, erişilebilirlik (a11y) standartları, ARIA etiketleri ve doğru heading hiyerarşisi gibi modern web geliştirme pratiklerini uygulamayı amaçlamaktadır.
+Bu proje, **Fırat Üniversitesi Web Tasarımı ve Programlama** dersi kapsamında geliştirilmiş kişisel portföy web uygulamasıdır.
 
 ## Geliştirici
 
