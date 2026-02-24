@@ -76,6 +76,7 @@ function App() {
       <header className="site-header">
         <h1>Batuhan Yaşar Özkan</h1>
         <p className="subtitle">Yazılım Mühendisliği Öğrencisi &amp; Full Stack Developer</p>
+        <p className="student-id">230541050</p>
 
         {/* Navigation */}
         <nav aria-label="Ana navigasyon">
@@ -105,7 +106,7 @@ function App() {
           </figure>
 
           <p>
-            Merhaba! Ben <strong>Batuhan Yaşar Özkan</strong>.{' '}
+            Merhaba! Ben <strong>Batuhan Yaşar Özkan</strong> (230541050).{' '}
             <strong>Fırat Üniversitesi Yazılım Mühendisliği</strong> bölümünde 3. sınıf
             öğrencisiyim. Full Stack Development ve Yapay Zeka alanlarında çalışmalar
             yürütüyorum.
