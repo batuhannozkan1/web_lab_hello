@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Proje Önizleme](./public/resim1.png)
+<img src="./public/resim1.png" alt="Proje Önizleme" width="700" />
 
 **Fırat Üniversitesi - Yazılım Mühendisliği**
 
