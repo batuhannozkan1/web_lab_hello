@@ -104,6 +104,13 @@ function App() {
             <figcaption>Batuhan Yaşar Özkan</figcaption>
           </figure>
 
+          <p>
+            Merhaba! Ben <strong>Batuhan Yaşar Özkan</strong>.{' '}
+            <strong>Fırat Üniversitesi Yazılım Mühendisliği</strong> bölümünde 3. sınıf
+            öğrencisiyim. Full Stack Development ve Yapay Zeka alanlarında çalışmalar
+            yürütüyorum.
+          </p>
+
           <h3>Yetkinliklerim</h3>
           <ul className="skills-list">
             <li>Full Stack Development</li>
