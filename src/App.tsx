@@ -81,7 +81,6 @@ function App() {
         <nav aria-label="Ana navigasyon">
           <ul className="nav-list">
             <li><a href="#hakkimda">Hakkımda</a></li>
-            <li><a href="#projeler">Projelerim</a></li>
             <li><a href="#iletisim">İletişim</a></li>
           </ul>
         </nav>
@@ -109,37 +108,9 @@ function App() {
           <ul className="skills-list">
             <li>Full Stack Development</li>
             <li>Yapay Zeka</li>
-            <li>Web Scraping</li>
-            <li>Algoritma Analizi</li>
-            <li>Siber Güvenlik</li>
           </ul>
         </section>
 
-        {/* Projelerim Section */}
-        <section id="projeler" aria-labelledby="projeler-baslik">
-          <h2 id="projeler-baslik">Projelerim</h2>
-
-          <article className="project-card">
-            <h3>FlexyLLM</h3>
-            <p>
-              FlexyLLM, esnek ve modüler bir yapıya sahip yapay zeka projesidir. Farklı dil
-              modellerini entegre ederek kullanıcılara çoklu LLM desteği sunar. Proje,
-              yapay zeka alanındaki deneyimlerimi ve modern NLP tekniklerini bir araya
-              getirmektedir.
-            </p>
-          </article>
-
-          <article className="project-card">
-            <h3>HybridCipher</h3>
-            <p>
-              HybridCipher, birden fazla kriptografik algoritmayı hibrit bir yapıda birleştiren
-              bir güvenlik projesidir. Simetrik ve asimetrik şifreleme yöntemlerini kombine
-              ederek yüksek düzeyde veri güvenliği sağlar. Siber güvenlik alanındaki bilgi
-              birikimimi yansıtan bu proje, algoritma analizi yetkinliğimi de
-              göstermektedir.
-            </p>
-          </article>
-        </section>
 
         {/* İletişim Section */}
         <section id="iletisim" aria-labelledby="iletisim-baslik">
