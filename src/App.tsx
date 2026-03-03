@@ -73,15 +73,18 @@ function App() {
       </a>
 
       {/* Header */}
-      <header className="site-header">
-        <h1>Batuhan Yaşar Özkan</h1>
-        <p className="subtitle">Yazılım Mühendisliği Öğrencisi &amp; Full Stack Developer</p>
-        <p className="student-id">230541050</p>
+      <header>
+        <div>
+          <span className="site-title">Batuhan Yaşar Özkan</span>
+          <p className="subtitle">Yazılım Mühendisliği Öğrencisi &amp; Full Stack Developer</p>
+          <p className="student-id">230541050</p>
+        </div>
 
         {/* Navigation */}
         <nav aria-label="Ana navigasyon">
-          <ul className="nav-list">
+          <ul>
             <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#projeler">Projelerim</a></li>
             <li><a href="#iletisim">İletişim</a></li>
           </ul>
         </nav>
@@ -94,31 +97,84 @@ function App() {
         <section id="hakkimda" aria-labelledby="hakkimda-baslik">
           <h2 id="hakkimda-baslik">Hakkımda</h2>
 
-          <figure className="profile-figure">
-            <img
-              src="https://ui-avatars.com/api/?name=Batuhan+Yasar+Ozkan&size=180&background=2563EB&color=ffffff&bold=true&format=svg"
-              alt="Batuhan Yaşar Özkan profil fotoğrafı"
-              width={180}
-              height={180}
-              className="profile-img"
-            />
-            <figcaption>Batuhan Yaşar Özkan</figcaption>
-          </figure>
+          <div className="about-content">
+            <figure>
+              <img
+                src="https://ui-avatars.com/api/?name=Batuhan+Yasar+Ozkan&size=180&background=1E3A8A&color=ffffff&bold=true&format=svg"
+                alt="Batuhan Yaşar Özkan profil fotoğrafı"
+                width={180}
+                height={180}
+              />
+              <figcaption>Batuhan Yaşar Özkan</figcaption>
+            </figure>
 
-          <p>
-            Merhaba! Ben <strong>Batuhan Yaşar Özkan</strong> (230541050).{' '}
-            <strong>Fırat Üniversitesi Yazılım Mühendisliği</strong> bölümünde 3. sınıf
-            öğrencisiyim. Full Stack Development ve Yapay Zeka alanlarında çalışmalar
-            yürütüyorum.
-          </p>
+            <div className="about-text">
+              <p>
+                Merhaba! Ben <strong>Batuhan Yaşar Özkan</strong> (230541050).{' '}
+                <strong>Fırat Üniversitesi Yazılım Mühendisliği</strong> bölümünde 3. sınıf
+                öğrencisiyim. Full Stack Development ve Yapay Zeka alanlarında çalışmalar
+                yürütüyorum.
+              </p>
 
-          <h3>Yetkinliklerim</h3>
-          <ul className="skills-list">
-            <li>Full Stack Development</li>
-            <li>Yapay Zeka</li>
-          </ul>
+              <h3>Becerilerim</h3>
+              <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
+        {/* Projelerim Section */}
+        <section id="projeler" aria-labelledby="projeler-baslik">
+          <h2 id="projeler-baslik">Projelerim</h2>
+
+          <div className="project-grid">
+            <article className="project-card">
+              <img
+                src="/proje1.svg"
+                alt="E-Ticaret sitesi anasayfa ekran görüntüsü"
+              />
+              <h3>E-Ticaret Sitesi</h3>
+              <p>React ve Node.js ile geliştirilmiş tam kapsamlı bir e-ticaret uygulaması.</p>
+              <ul className="skill-tags">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+            </article>
+
+            <article className="project-card">
+              <img
+                src="/proje2.svg"
+                alt="Blog uygulaması yazı listesi görünümü"
+              />
+              <h3>Blog Uygulaması</h3>
+              <p>Kişisel blog platformu. Markdown destekli yazı editörü.</p>
+              <ul className="skill-tags">
+                <li>TypeScript</li>
+                <li>Next.js</li>
+              </ul>
+            </article>
+
+            <article className="project-card">
+              <img
+                src="/proje3.svg"
+                alt="Hava durumu uygulaması arayüzü"
+              />
+              <h3>Hava Durumu</h3>
+              <p>OpenWeather API ile anlık hava durumu bilgisi.</p>
+              <ul className="skill-tags">
+                <li>JavaScript</li>
+                <li>API</li>
+              </ul>
+            </article>
+          </div>
+        </section>
 
         {/* İletişim Section */}
         <section id="iletisim" aria-labelledby="iletisim-baslik">
@@ -210,14 +266,14 @@ function App() {
                 </small>
               </div>
 
-              <button type="submit" className="submit-btn">Gönder</button>
+              <button type="submit">Gönder</button>
             </form>
           )}
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="site-footer">
+      <footer>
         <p>&copy; 2026 Batuhan Yaşar Özkan &mdash; Fırat Üniversitesi, Yazılım Mühendisliği</p>
       </footer>
     </>

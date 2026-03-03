@@ -1,321 +1,391 @@
-/* ============================================
-   Skip Navigation Link
-   ============================================ */
+/* ==========================================
+   MOBIL VARSAYILAN (0 - 639px)
+   ========================================== */
+
+/* ===== SKIP LINK ===== */
 .skip-link {
   position: absolute;
   top: -100%;
-  left: 16px;
+  left: var(--space-md);
   z-index: 1000;
-  padding: 12px 24px;
-  background-color: #2563eb;
-  color: #ffffff;
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: var(--text-base);
   text-decoration: none;
-  border-radius: 0 0 8px 8px;
-  transition: top 0.2s ease;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  transition: top var(--transition-fast);
 }
 
 .skip-link:focus {
   top: 0;
-  outline: 3px solid #1d4ed8;
+  outline: 3px solid var(--color-primary);
   outline-offset: 2px;
 }
 
-/* ============================================
-   Focus Indicators (Accessibility)
-   ============================================ */
+/* ===== FOCUS INDICATORS ===== */
 *:focus-visible {
-  outline: 2px solid #2563eb;
+  outline: 2px solid var(--color-secondary);
   outline-offset: 2px;
 }
 
-/* ============================================
-   Base & Typography
-   ============================================ */
-:root {
-  --color-primary: #2563eb;
-  --color-primary-dark: #1d4ed8;
-  --color-text: #1f2937;
-  --color-text-light: #4b5563;
-  --color-bg: #f9fafb;
-  --color-white: #ffffff;
-  --color-border: #d1d5db;
-  --color-error: #dc2626;
-  --color-success: #16a34a;
-  --radius: 8px;
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  line-height: 1.6;
-}
-
-/* ============================================
-   Header
-   ============================================ */
-.site-header {
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-bg);
   text-align: center;
-  padding: 48px 24px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  gap: var(--space-sm);
 }
 
-.site-header h1 {
-  margin: 0 0 8px;
-  font-size: 2.25rem;
+/* Logo / Site adi */
+.site-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
 }
 
-.site-header .subtitle {
-  margin: 0 0 4px;
-  font-size: 1.125rem;
+.subtitle {
+  font-size: var(--text-sm);
   opacity: 0.9;
 }
 
-.site-header .student-id {
-  margin: 0 0 24px;
-  font-size: 0.95rem;
+.student-id {
+  font-size: var(--text-sm);
   opacity: 0.8;
   letter-spacing: 1px;
 }
 
-/* ============================================
-   Navigation
-   ============================================ */
-.nav-list {
+/* ===== NAV LISTESI ===== */
+nav ul {
   display: flex;
-  justify-content: center;
-  gap: 32px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
-  margin: 0;
+  gap: var(--space-sm);
   padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-.nav-list a {
-  color: var(--color-white);
+nav a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: var(--space-xs) var(--space-md);
+  color: var(--color-bg);
   text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast),
+              color var(--transition-fast);
   font-weight: 600;
-  padding: 4px 2px;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s ease;
 }
 
-.nav-list a:hover,
-.nav-list a:focus-visible {
-  border-bottom-color: var(--color-white);
+nav a:hover,
+nav a:focus {
+  background-color: var(--color-secondary);
 }
 
-/* ============================================
-   Main Content
-   ============================================ */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 24px;
-}
-
+/* ===== SECTION'LAR ===== */
 section {
-  margin-bottom: 48px;
+  padding: var(--space-xl) var(--space-md);
 }
 
 section h2 {
-  font-size: 1.75rem;
-  color: var(--color-primary-dark);
-  border-bottom: 3px solid var(--color-primary);
-  padding-bottom: 8px;
-  margin-bottom: 24px;
-}
-
-/* ============================================
-   Profile Figure
-   ============================================ */
-.profile-figure {
+  font-size: var(--text-2xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
   text-align: center;
-  margin: 0 0 24px;
 }
 
-.profile-img {
-  border-radius: 50%;
-  border: 4px solid var(--color-primary);
-  margin: 0 auto;
+/* ===== HAKKIMDA ===== */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  text-align: center;
 }
 
-.profile-figure figcaption {
-  margin-top: 8px;
-  font-size: 0.875rem;
-  color: var(--color-text-light);
+.about-content figure {
+  max-width: 200px;
 }
 
-/* ============================================
-   Skills List
-   ============================================ */
-.skills-list {
+.about-content img {
+  border-radius: var(--radius-full);
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.about-content figcaption {
+  margin-top: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.about-text p {
+  font-size: var(--text-base);
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
+}
+
+.about-text h3 {
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+/* ===== BECERI ETIKETLERI (Toolbar) ===== */
+.skill-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: var(--space-sm);
   list-style: none;
   padding: 0;
-  margin: 16px 0 0;
 }
 
-.skills-list li {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 0.875rem;
+.skill-tags li {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
   font-weight: 600;
 }
 
-/* ============================================
-   Project Cards
-   ============================================ */
+/* ===== PROJE GRID ===== */
+.project-grid {
+  display: grid;
+  /* Sihirli satir: otomatik responsive grid! */
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+}
+
+/* ===== PROJE KARTI ===== */
 .project-card {
-  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: 24px;
-  margin-bottom: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.2s ease;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform var(--transition-normal),
+              box-shadow var(--transition-normal);
 }
 
 .project-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Kart icindeki gorsel */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Kart icerigi */
+.project-card h3,
+.project-card p,
+.project-card .skill-tags {
+  padding: 0 var(--space-lg);
 }
 
 .project-card h3 {
-  margin: 0 0 12px;
-  color: var(--color-primary-dark);
-  font-size: 1.25rem;
+  margin-top: var(--space-md);
+  font-size: var(--text-lg);
+  color: var(--color-primary);
 }
 
 .project-card p {
-  margin: 0;
-  color: var(--color-text-light);
+  color: var(--color-muted);
+  flex-grow: 1;
+  margin-top: var(--space-sm);
 }
 
-/* ============================================
-   Contact Form
-   ============================================ */
+.project-card .skill-tags {
+  padding-bottom: var(--space-lg);
+  margin-top: auto;
+  padding-top: var(--space-md);
+}
+
+/* ===== ILETISIM FORMU ===== */
 .contact-form {
-  background-color: var(--color-white);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: 32px;
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: var(--space-md);
 }
 
-.form-group label {
+label {
   display: block;
+  margin-bottom: var(--space-xs);
   font-weight: 600;
-  margin-bottom: 6px;
-  color: var(--color-text);
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
-  display: block;
+input,
+textarea,
+select {
   width: 100%;
-  padding: 10px 12px;
-  font-size: 1rem;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   font-family: inherit;
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius);
-  background-color: var(--color-white);
-  color: var(--color-text);
-  box-sizing: border-box;
-  transition: border-color 0.2s ease;
+  font-size: var(--text-base);
+  transition: border-color var(--transition-fast);
 }
 
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-  border-color: var(--color-primary);
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-secondary);
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
 }
 
-.form-group input[aria-invalid="true"],
-.form-group textarea[aria-invalid="true"],
-.form-group select[aria-invalid="true"] {
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
   border-color: var(--color-error);
 }
 
-.form-group textarea {
+textarea {
   resize: vertical;
 }
 
 .error-message {
   display: block;
   min-height: 1.25rem;
-  margin-top: 4px;
-  font-size: 0.875rem;
+  margin-top: var(--space-xs);
+  font-size: var(--text-sm);
   color: var(--color-error);
   font-weight: 500;
 }
 
-.submit-btn {
-  display: inline-block;
-  padding: 12px 32px;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-white);
-  background-color: var(--color-primary);
+button[type="submit"] {
+  width: 100%;
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-secondary);
+  color: var(--color-bg);
   border: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background var(--transition-fast);
 }
 
-.submit-btn:hover {
-  background-color: var(--color-primary-dark);
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background: var(--color-primary);
 }
 
 .success-message {
   background-color: #f0fdf4;
   border: 2px solid var(--color-success);
-  border-radius: var(--radius);
-  padding: 24px;
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
   text-align: center;
   color: #166534;
   font-weight: 600;
 }
 
-/* ============================================
-   Footer
-   ============================================ */
-.site-footer {
+/* ===== FOOTER ===== */
+footer {
   text-align: center;
-  padding: 24px;
-  background-color: var(--color-text);
-  color: var(--color-white);
-  font-size: 0.875rem;
+  padding: var(--space-xl) var(--space-md);
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
 }
 
-/* ============================================
-   Responsive
-   ============================================ */
-@media (max-width: 600px) {
-  .site-header h1 {
-    font-size: 1.75rem;
+/* ==========================================
+   TABLET (640px ve uzeri)
+   ========================================== */
+@media (min-width: 640px) {
+  section {
+    padding: var(--space-2xl) var(--space-xl);
   }
 
-  .nav-list {
-    flex-direction: column;
-    gap: 12px;
+  /* Header: yatay duzen */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-xl);
   }
 
-  main {
-    padding: 24px 16px;
+  /* Nav: yatay duzen */
+  nav ul {
+    flex-direction: row;
+    width: auto;
+    gap: var(--space-sm);
+  }
+
+  nav a {
+    width: auto;
+  }
+
+  /* Hakkimda: yatay duzen */
+  .about-content {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .about-content figure {
+    flex-shrink: 0;
+  }
+
+  /* Form butonu tam genislik olmaktan cikar */
+  button[type="submit"] {
+    width: auto;
   }
 
   .contact-form {
-    padding: 20px;
+    padding: var(--space-xl);
+  }
+}
+
+/* ==========================================
+   MASAUSTU (1024px ve uzeri)
+   ========================================== */
+@media (min-width: 1024px) {
+  /* Icerik genisligi sinirla */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: var(--space-3xl) var(--space-xl);
+  }
+
+  /* Proje kartlari en az 3 sutun */
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header {
+    padding: var(--space-md) var(--space-2xl);
+  }
+
+  nav ul {
+    gap: var(--space-md);
   }
 }

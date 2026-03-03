@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7C3AED"/>
+      <stop offset="100%" style="stop-color:#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#g2)"/>
+  <text x="300" y="180" fill="white" font-size="36" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">Blog Uygulamasi</text>
+  <text x="300" y="230" fill="rgba(255,255,255,0.8)" font-size="20" text-anchor="middle" font-family="system-ui, sans-serif">TypeScript + Next.js</text>
+</svg>

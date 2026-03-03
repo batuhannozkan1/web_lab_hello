@@ -1,19 +1,31 @@
-/* CSS Reset */
+@import './styles/tokens.css';
+
+/* ==========================================
+   GLOBAL RESET
+   ========================================== */
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-
-* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
 img {
-  display: block;
   max-width: 100%;
+  height: auto;
+  display: block;
 }
