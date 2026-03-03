@@ -86,6 +86,12 @@ web-lab-hello/
 - **Focus Göstergeleri** - Klavye navigasyonu için belirgin `outline`
 - **Renk Kontrastı** - WCAG AA uyumlu (4.5:1 oran)
 
+## Ekran Görüntüleri
+
+| Mobil (375px) | Tablet (768px) | Masaüstü (1280px) |
+|:---:|:---:|:---:|
+| <img src="./screenshots/screenshot-mobile.png" alt="Mobil görünüm" width="200" /> | <img src="./screenshots/screenshot-tablet.png" alt="Tablet görünüm" width="300" /> | <img src="./screenshots/screenshot-desktop.png" alt="Masaüstü görünüm" width="400" /> |
+
 ---
 
 <div align="center">
