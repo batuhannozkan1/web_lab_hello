@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "E-Ticaret Platformu",
+    "description": "React ve Node.js ile gelistirilmis tam kapsamli bir e-ticaret uygulamasi. Kullanici girisi, urun yonetimi ve odeme entegrasyonu icermektedir.",
+    "tech": ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    "category": "fullstack",
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Blog Uygulamasi",
+    "description": "Next.js ile SEO dostu kisisel blog platformu. Markdown destekli yazi editoru ve dinamik routing ozellikleri bulunmaktadir.",
+    "tech": ["Next.js", "TypeScript", "MDX"],
+    "category": "frontend",
+    "year": 2024,
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "Hava Durumu API",
+    "description": "OpenWeather API kullanarak anlik hava durumu bilgisi sunan RESTful servis. Redis ile onbellekleme ve rate limiting ozellikleri mevcuttur.",
+    "tech": ["JavaScript", "Express", "Redis"],
+    "category": "backend",
+    "year": 2023,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Portfolyo Web Sitesi",
+    "description": "React ve Tailwind CSS ile olusturulmus kisisel portfolyo sayfasi. Dark mode, responsive tasarim ve animasyonlar icermektedir.",
+    "tech": ["React", "TypeScript", "Tailwind CSS"],
+    "category": "frontend",
+    "year": 2025,
+    "featured": true
+  },
+  {
+    "id": 5,
+    "title": "Gorev Yonetim Paneli",
+    "description": "Takim ici gorev takibi icin full-stack uygulama. Drag-and-drop, gercek zamanli bildirimler ve raporlama modulu bulunmaktadir.",
+    "tech": ["React", "Node.js", "PostgreSQL", "Socket.io"],
+    "category": "fullstack",
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": 6,
+    "title": "REST API Servisi",
+    "description": "Express.js ile olusturulmus RESTful API. JWT authentication, Swagger dokumantasyonu ve unit testler icermektedir.",
+    "tech": ["Node.js", "Express", "JWT", "Jest"],
+    "category": "backend",
+    "year": 2023,
+    "featured": false
+  }
+]
